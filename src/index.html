@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    
+
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body id="up">
     <button class="hamburger">
         <div class="hamburger__line hamburger__line_short"></div>
         <div class="hamburger__line"></div>
@@ -41,8 +41,8 @@
             <h1 class="title title_fz48 promo__title">Я web-разработчик 
                 из города Москва</h1>
             <div class="promo__btns">
-                <a href="#" class="promo__link btn">Портфолио</a>
-                <a href="#" class="promo__link">Про меня</a>
+                <a href="#portfolio-link" class="promo__link btn">Портфолио</a>
+                <a href="#about_me-link" class="promo__link">Про меня</a>
             </div>
         </div>
 
@@ -473,7 +473,7 @@
                     <div class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
                 </div>
                 
-                <form action="#" class="contacts__form">
+                <form action="#" class="contacts__form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
                     <div id="name" class="contacts__input">
                         <input required name="name" type="text">
                         <label for="name">Ваше имя</label>
@@ -499,6 +499,15 @@
             </div>
         </div>
     </section>
+
+    <a href="#up" class="pageup">
+        <div class="pageup__up">
+            <img src="icons/social/up-arrow.svg" alt="">
+        </div>
+    </a>
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

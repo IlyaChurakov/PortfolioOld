@@ -26,5 +26,29 @@ orangeLine.forEach((item, num) => {
     orangeLine[num].style.width = `${number[num].innerHTML}`;
 });
 
+// Отправка данных на сервер
+
+$('form').submit(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "mailer/smart.php",
+        data: $(this).serialize()
+    }).done(function() {
+        $(this).find("input").val("");
+        // $('#main, #buy').fadeOut();
+        // $('.overlay, #waiting').fadeIn('slow');
+        $('form').trigger('reset');
+    });
+    return false;
+});
+
+$(window).scroll(function() {
+    if ($(this).scrollTop() > 1600) {
+        $('.pageup').fadeIn();
+    } else {
+        $('.pageup').fadeOut();
+    }
+});
 
 
