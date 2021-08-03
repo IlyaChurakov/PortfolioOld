@@ -1,0 +1,108 @@
+.skills {
+    &__title {
+        text-align: center;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+        line-height: 36px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background: $main-color;
+            z-index: -1;
+            transform: translateX(14px);
+        }
+    }
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        grid-template-rows: repeat(2, 270px);
+        grid-auto-rows: 270px;
+        gap: 13px;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+    &__item {
+        position: relative;
+        border: 2px solid #000;
+        padding: 30px 29px 25px 30px;
+        display: grid;        
+    }
+    &__icon {
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 30px;
+        &_jquery {
+            margin-top: 45px;
+        }
+        &_mongodb {
+            margin-top: 38px;
+        }
+    }
+    &__name {
+        margin-top: 85px;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__descr {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    &__percent-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 350px);
+        column-gap: 45px;
+        grid-template-rows: repeat(2, 70px);
+        row-gap: 30px;
+    }
+    &__percent {
+        width: 350px;
+        height: 70px;
+        display: grid;
+        grid-template-rows: 56px 14px;
+    }
+    &__text {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 8px;
+        margin-left: 14px;
+        &:before {
+            position: absolute;
+            content: '';
+            width: 36px;
+            height: 36px;
+            border-radius: 100%;
+            background: $main-color;
+            z-index: -1;
+            transform: translate(-13px, -7px);
+        }
+    }
+    &__rate-free {
+        width: 350px;
+        height: 14px;
+        background: #E8E4DE;
+        border-radius: 4px;
+    }
+    &__rate-used {
+        // width: 300px;
+        height: 14px;
+        background: $main-color;
+        border-radius: 4px;
+    }
+    &__number {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 21px;
+        position: absolute;
+        transform: translate(312px, 9px);
+    }
+}
