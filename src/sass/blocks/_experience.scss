@@ -27,10 +27,13 @@
         background-color: $main-color;
     }
     &__wrapper {
-        padding: 60px 65px 0 65px;
+        padding-top: 60px;
         display: grid;
-        grid-template-columns: 425px 425px;
-        column-gap: 136px;
+        grid-template-columns: 350px 350px;
+        // column-gap: 150px;
+        // width: 836px;
+        // margin: 0 auto;
+        justify-content: space-between;
     }
 
     &__column {
