@@ -394,6 +394,10 @@ progress {
   font-family: 'Poppins', sans-serif;
 }
 
+body {
+  background: #414141;
+}
+
 .container {
   display: block;
   max-width: 1140px;
@@ -401,7 +405,7 @@ progress {
 }
 
 .container__promo {
-  padding-top: 200px;
+  padding-top: 300px;
 }
 
 .container__about_me {
@@ -429,7 +433,7 @@ progress {
 .promo {
   min-height: 100vh;
   position: relative;
-  background: url("../img/Background.jpg") center center/cover no-repeat;
+  background: url("../img/macbook.jpg") center center/cover no-repeat;
   margin: 0 auto;
 }
 
@@ -475,11 +479,11 @@ progress {
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
 }
 
 .promo__link:hover {
-  color: #000000;
+  color: #ffffff;
 }
 
 .title {
@@ -491,11 +495,13 @@ progress {
 .title_fz12 {
   font-size: 12px;
   line-height: 18px;
+  color: white;
 }
 
 .title_fz14 {
   font-size: 14px;
   line-height: 21px;
+  color: white;
 }
 
 .title_fz14_workplace {
@@ -506,27 +512,32 @@ progress {
 .title_fz16 {
   font-size: 16px;
   line-height: 24px;
+  color: white;
 }
 
 .title_fz20 {
   font-size: 20px;
   line-height: 30px;
+  color: white;
 }
 
 .title_fz36 {
   font-size: 36px;
+  color: white;
 }
 
 .title_fz48 {
   font-size: 48px;
+  color: white;
 }
 
 .btn {
   background: #FFA501;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
+          box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.75);
   padding: 12px 25px;
   border: none;
+  color: #fff;
 }
 
 .btn:hover {
@@ -552,6 +563,7 @@ progress {
   top: 230px;
   left: 50px;
   z-index: 3;
+  color: white;
 }
 
 .sidepanel__link:hover svg path {
@@ -562,7 +574,7 @@ progress {
   display: block;
   width: 2px;
   height: 70px;
-  background-color: #000;
+  background-color: white;
 }
 
 .sidepanel__text {
@@ -573,7 +585,7 @@ progress {
 .sidepanel__text span {
   font-weight: bold;
   font-size: 16px;
-  color: #000000;
+  color: white;
   -webkit-transform: rotate(-90deg) translate(-60px, -65px);
           transform: rotate(-90deg) translate(-60px, -65px);
   display: block;
@@ -611,7 +623,7 @@ progress {
 .hamburger__line {
   width: 36px;
   height: 3px;
-  background: #151812;
+  background: #ffffff;
 }
 
 .hamburger__line_short {
@@ -637,7 +649,7 @@ progress {
   width: 100%;
   left: 0;
   height: 100%;
-  background: #fff;
+  background: rgba(0, 0, 0, 0.842);
   opacity: 50%;
   top: 0;
 }
@@ -653,7 +665,7 @@ progress {
   height: 100%;
   width: 345px;
   left: -345px;
-  background: #FFA501;
+  background: #414141;
   -webkit-transition: all .6s;
   transition: all .6s;
   z-index: 10;
@@ -664,8 +676,21 @@ progress {
   left: 0;
 }
 
+.overlay__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .overlay__menu ul li {
-  margin-bottom: 15px;
   font-weight: bold;
   font-size: 24px;
   line-height: 36px;
@@ -748,6 +773,7 @@ progress {
 
 .experience {
   min-height: 100vh;
+  background: #414141;
 }
 
 .experience__title {
@@ -826,17 +852,16 @@ progress {
   position: absolute;
   top: -18px;
   left: -46px;
-  background-color: #000;
-  z-index: -1;
+  background-color: white;
 }
 
 .experience__icon {
   margin-right: 5px;
 }
 
-.experience__icon img {
-  -webkit-transform: translate(-11px, 8px);
-          transform: translate(-11px, 8px);
+.experience__icon svg {
+  -webkit-transform: translate(-11px, 0px);
+          transform: translate(-11px, 0px);
 }
 
 .experience__icon:before {
@@ -846,7 +871,6 @@ progress {
   height: 36px;
   border-radius: 100%;
   background: #FFA501;
-  z-index: -1;
   top: 1px;
   left: -3px;
 }
@@ -856,8 +880,7 @@ progress {
   content: '';
   width: 42px;
   height: 1px;
-  background-color: #000;
-  z-index: -1;
+  background-color: white;
   top: 18px;
   left: -45px;
 }
@@ -881,6 +904,7 @@ progress {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
+  color: #fff;
 }
 
 .experience__headwrapper {
@@ -903,6 +927,7 @@ progress {
 
 .about_me {
   min-height: 100vh;
+  background: #414141;
 }
 
 .about_me__wrapper {
@@ -927,6 +952,9 @@ progress {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+  border-radius: 5px;
 }
 
 .about_me__title {
@@ -949,6 +977,7 @@ progress {
   font-size: 14px;
   line-height: 21px;
   margin-top: 20px;
+  color: white;
 }
 
 .about_me__subtitle {
@@ -995,7 +1024,7 @@ progress {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: white;
 }
 
 .about_me__icon {
@@ -1015,8 +1044,12 @@ progress {
   left: 0;
 }
 
-.about_me__icon img {
+.about_me__icon svg {
   margin-top: 15px;
+}
+
+.skills {
+  background: #414141;
 }
 
 .skills__title {
@@ -1045,10 +1078,12 @@ progress {
 .skills__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (270px)[4];
-      grid-template-columns: repeat(4, 270px);
-  -ms-grid-rows: (270px)[2];
-      grid-template-rows: repeat(2, 270px);
+  -ms-grid-columns: (270px)[3];
+      grid-template-columns: repeat(3, 270px);
+  -ms-grid-rows: (270px)[1];
+      grid-template-rows: repeat(1, 270px);
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   grid-auto-rows: 270px;
   gap: 13px;
   margin-top: 60px;
@@ -1061,6 +1096,9 @@ progress {
   padding: 30px 29px 25px 30px;
   display: -ms-grid;
   display: grid;
+  -webkit-box-shadow: 5px 5px 30px;
+          box-shadow: 5px 5px 30px;
+  background: white;
 }
 
 .skills__icon {
@@ -1156,6 +1194,7 @@ progress {
 
 .portfolio {
   min-height: 100vh;
+  background: #414141;
 }
 
 .portfolio__title {
@@ -1293,6 +1332,10 @@ progress {
           justify-content: space-between;
 }
 
+.contacts {
+  background: #414141;
+}
+
 .contacts__wrapper {
   display: -ms-grid;
   display: grid;
@@ -1314,6 +1357,9 @@ progress {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 5px 5px 20px;
+          box-shadow: 5px 5px 20px;
+  border-radius: 5px;
 }
 
 .contacts__title {
@@ -1333,7 +1379,7 @@ progress {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .contacts__subtitle {
@@ -1376,7 +1422,7 @@ progress {
   font-weight: bold;
   font-size: 14px;
   line-height: 21px;
-  color: #000000;
+  color: #ffffff;
 }
 
 .contacts__form {
@@ -1388,12 +1434,6 @@ progress {
   row-gap: 30px;
   -webkit-column-gap: 25px;
           column-gap: 25px;
-}
-
-.contacts__textarea {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-column: 1 / 3;
 }
 
 .contacts__triggers {
@@ -1421,6 +1461,10 @@ progress {
           align-items: center;
 }
 
+.contacts__policy span {
+  color: #fff;
+}
+
 .contacts__policy span a {
   text-decoration: none;
 }
@@ -1440,27 +1484,32 @@ progress {
 .contacts__input input {
   width: 100%;
   height: 100%;
-  border: 1px solid #000000;
+  border: 1px solid #ffffff;
   padding: 14px 20px 13px 20px;
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
+  background: #414141;
 }
 
 .contacts__input label {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
   position: absolute;
   background: white;
   padding: 0 8px;
   left: 12px;
   top: -9px;
+  background: #414141;
 }
 
 .contacts__textarea {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / 3;
   position: relative;
 }
 
@@ -1471,20 +1520,23 @@ progress {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
   resize: none;
+  background: #414141;
+  border: 1px solid #fff;
 }
 
 .contacts__textarea label {
   font-weight: 500;
   font-size: 12px;
   line-height: 18px;
-  color: #000000;
+  color: #ffffff;
   position: absolute;
   background: white;
   padding: 0 8px;
   left: 12px;
   top: -9px;
+  background: #414141;
 }
 
 .pageup {
@@ -1519,11 +1571,23 @@ progress {
   width: 50%;
 }
 
+.header {
+  display: block;
+  height: 60px;
+  width: 100%;
+  position: fixed;
+  background: rgba(43, 43, 43, 0.8);
+  z-index: 10;
+}
+
 @media (max-width: 1439px) {
   .container {
     width: 100%;
     padding-right: 120px;
     padding-left: 120px;
+  }
+  .container__portfolio {
+    padding-bottom: 69px;
   }
   .about_me__wrapper {
     -ms-grid-columns: 320px 510px;
@@ -1551,7 +1615,7 @@ progress {
     -ms-grid-rows: (270px)[3];
         grid-template-rows: repeat(3, 270px);
     width: 837px;
-    margin: 60px auto 120px auto;
+    margin: 60px auto 23px auto;
   }
   .skills__percent-wrapper {
     -ms-grid-columns: (350px)[2];
@@ -1626,8 +1690,8 @@ progress {
   .skills__wrapper {
     -ms-grid-columns: (270px)[2];
         grid-template-columns: repeat(2, 270px);
-    -ms-grid-rows: (270px)[4];
-        grid-template-rows: repeat(4, 270px);
+    -ms-grid-rows: (270px)[2];
+        grid-template-rows: repeat(2, 270px);
     width: 554px;
   }
   .contacts__wrapper {
@@ -1698,7 +1762,7 @@ progress {
     max-width: 540px;
   }
   .container__contacts {
-    padding-top: 60px;
+    padding-top: 0px;
   }
   .promo .title_fz48 {
     font-size: 36px;
@@ -1735,8 +1799,8 @@ progress {
   .skills__wrapper {
     -ms-grid-columns: (270px)[1];
         grid-template-columns: repeat(1, 270px);
-    -ms-grid-rows: (270px)[7];
-        grid-template-rows: repeat(7, 270px);
+    -ms-grid-rows: (270px)[3];
+        grid-template-rows: repeat(3, 270px);
     width: 270px;
   }
   .contacts__wrapper {
@@ -1795,20 +1859,30 @@ progress {
     width: 100%;
     padding-right: 10px;
     padding-left: 10px;
+    padding-top: 300px;
+    padding-bottom: 50px;
   }
   .container__about_me {
-    padding-top: 40px;
+    padding-top: 60px;
   }
   .container__experience {
     padding-top: 60px;
-    padding-bottom: 0px;
+    padding-bottom: 50px;
   }
   .container__skills {
     padding-bottom: 40px;
+    padding-top: 50px;
+  }
+  .container__portfolio {
+    padding-top: 50px;
   }
   .container__price {
     padding-top: 40px;
     padding-bottom: 40px;
+  }
+  .container__contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .hamburger {
     right: 20px;
@@ -1821,9 +1895,6 @@ progress {
   }
   .overlay__menu ul li:before {
     left: 20px;
-  }
-  .promo {
-    background-position-x: -680px;
   }
   .promo .title_fz48 {
     font-size: 26px;
@@ -1939,8 +2010,8 @@ progress {
   .contacts__wrapper {
     -ms-grid-columns: 290px;
         grid-template-columns: 290px;
-    -ms-grid-rows: 340px;
-        grid-template-rows: 340px;
+    -ms-grid-rows: 340px 30px 265px 500px;
+        grid-template-rows: 340px 30px 265px 500px;
     width: 290px;
     margin: 0 auto;
   }
@@ -2011,7 +2082,7 @@ progress {
 
 @media (max-width: 500px) {
   .promo {
-    background: url("../img/mobile/Background.jpg") center center/cover no-repeat;
+    background: url("../img/mobile/code.jpg") center center/cover no-repeat;
   }
 }
 /*# sourceMappingURL=style.css.map */

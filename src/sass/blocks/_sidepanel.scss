@@ -8,6 +8,7 @@
     top: 230px;
     left: 50px;
     z-index: 3;
+    color: $text-color;
     &__link {
         &:hover {
             svg path {
@@ -19,7 +20,7 @@
         display: block;
         width: 2px;
         height: 70px;
-        background-color: #000;
+        background-color: rgb(255, 255, 255);
     }
     &__text {
         height: 150px;
@@ -27,7 +28,7 @@
         span {
             font-weight: bold;
             font-size: 16px;
-            color: #000000;
+            color: $text-color;
             transform: rotate(-90deg) translate(-60px, -65px);
             display: block;
             width: 150px;

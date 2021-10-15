@@ -1,7 +1,7 @@
 .promo {
     min-height: 100vh;
     position: relative;
-    background: url('../img/Background.jpg') center center / cover no-repeat;
+    background: url('../img/macbook.jpg') center center / cover no-repeat;
     margin: 0 auto;
     &__title {
         width: 522px;
@@ -25,9 +25,9 @@
         font-weight: bold;
         font-size: 14px;
         text-decoration: none;
-        color: #000000;
+        color: #ffffff;
         &:hover {
-            color: #000000;
+            color: #ffffff;
         }
     }
 }

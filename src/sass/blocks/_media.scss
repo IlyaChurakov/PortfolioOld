@@ -3,6 +3,9 @@
         width: 100%;
         padding-right: 120px;
         padding-left: 120px;
+        &__portfolio {
+            padding-bottom: 69px;
+        }
     }
     .about_me {
         &__wrapper {
@@ -30,7 +33,7 @@
             grid-template-columns: repeat(3, 270px);
             grid-template-rows: repeat(3, 270px);
             width: 837px;
-            margin: 60px auto 120px auto;
+            margin: 60px auto 23px auto;
         }
         &__percent-wrapper {
             grid-template-columns: repeat(2, 350px);
@@ -96,7 +99,7 @@
     .skills {
         &__wrapper {
             grid-template-columns: repeat(2, 270px);
-            grid-template-rows: repeat(4, 270px);
+            grid-template-rows: repeat(2, 270px);
             width: 554px;
         }
     }
@@ -171,7 +174,7 @@
     .container {
         max-width: 540px;
         &__contacts {
-            padding-top: 60px;
+            padding-top: 0px;
         }
     }
     .promo {
@@ -207,7 +210,7 @@
     .skills {
         &__wrapper {
             grid-template-columns: repeat(1, 270px);
-            grid-template-rows: repeat(7, 270px);
+            grid-template-rows: repeat(3, 270px);
             width: 270px;
         }
     }
@@ -256,19 +259,29 @@
         width: 100%;
         padding-right: 10px;
         padding-left: 10px;
+        padding-top: 300px;
+        padding-bottom: 50px;
         &__about_me {
-            padding-top: 40px;
+            padding-top: 60px;
         }
         &__experience {
             padding-top: 60px;
-            padding-bottom: 0px;
+            padding-bottom: 50px;
         }
         &__skills {
             padding-bottom: 40px;
+            padding-top: 50px;
+        }
+        &__portfolio {
+            padding-top: 50px;
         }
         &__price {
             padding-top: 40px;
             padding-bottom: 40px;
+        }
+        &__contacts {
+            padding-top: 50px;
+            padding-bottom: 50px;
         }
     }
     .hamburger {
@@ -286,7 +299,6 @@
         }
     }
     .promo {
-        background-position-x: -680px;
         .title_fz48 {
             font-size: 26px;
             width: 280px;
@@ -398,7 +410,7 @@
     .contacts {
         &__wrapper {
             grid-template-columns: 290px;
-            grid-template-rows: 340px;
+            grid-template-rows: 340px 30px 265px 500px;
             width: 290px;
             margin: 0 auto;
         }
@@ -460,6 +472,6 @@
 
 @media (max-width: 500px) {
     .promo {
-        background: url('../img/mobile/Background.jpg') center center / cover no-repeat;
+        background: url('../img/mobile/code.jpg') center center / cover no-repeat;
     }
 }
