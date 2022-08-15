@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-
+    <link rel="shortcut icon" href="icons/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body id="up">
@@ -38,6 +38,8 @@
             <div class="hamburger__line"></div>
             <div class="hamburger__line hamburger__line_short"></div>
         </button>
+        <div class="progressВarUnder"></div>
+        <div class="progressВar" id="progressBar"></div>
     </header>
 
     <section class="promo">
@@ -116,7 +118,7 @@
                     <div class="title title_fz16 about_me__subtitle">Про меня</div>
                     <h1 class="title title_fz36 about_me__title">Меня зовут Илья</h1>
                     <div class="about_me__line"></div>
-                    <div class="about_me__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</div>
+                    <div class="about_me__text">Мне 21 год и я веб-разработчик, мое основное направление Front-end, занимаюсь этим уже более 2-х лет, но так же практикую back-end и UI/UX design. Создаю сайты на фрилансе. Параллельно учусь в Московском Государственном Строительном Университете на направлении "Информационные системы и технологии в строительстве"</div>
                 </div>
                 <div class="about_me__points">
                     <div class="about_me__point">
@@ -130,7 +132,7 @@
                         </div>
                         <div class="about_me__subdescr">
                             <h1 class="title title_fz14">Web-разработка</h1>
-                            <div class="about_me__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="about_me__subtext">Мой путь во Front-End разработку начался на первом курсе университета, тогда я искал как себя реализовать и увлекся программированием на языке JavaScript.</div>
                         </div>
                     </div>
                     <div class="about_me__point">
@@ -147,7 +149,7 @@
                         </div>
                         <div class="about_me__subdescr">
                             <h1 class="title title_fz14">Разработка приложений</h1>
-                            <div class="about_me__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="about_me__subtext">Изучение Front-End не остановилось на нативном JavaScript - я изучил библиотеку React, которая позволяет мне создавать веб-приложения.</div>
                         </div>
                     </div>
                     <div class="about_me__point">
@@ -166,7 +168,7 @@
                         </div>
                         <div class="about_me__subdescr">
                             <h1 class="title title_fz14">UI/UX Design</h1>
-                            <div class="about_me__subtext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                            <div class="about_me__subtext">Я с отличием окончил художественную школу, поэтому мне нравится заниматься дизайном, который я изучаю параллельно программированию.</div>
                         </div>
                     </div>
                     
@@ -198,7 +200,7 @@
                                         <h5 class="title_fz12 margin0">Студент 3-го курса направления Информационные системы и технологии</h5>
                                     </div>
                                 </div>
-                                <div class="experience__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+                                <div class="experience__body">В университете я писал консольные приложения на языке C++, изучал системное администрирование, операционные системы, работал с базами данных MySQL, писал Back-End на языке PHP.</div>
                             </div>
                             <div class="experience__item">
                                 <div class="experience__head">  
@@ -218,7 +220,7 @@
                                         <h5 class="title_fz12 margin0">Курсы по Web-разработке </h5>
                                     </div>
                                 </div>
-                                <div class="experience__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+                                <div class="experience__body">Изучение Front-End я начинал с курсов на Udemy, которые позволили быстро вникнуть в интересную мне тему и положили хорошее начало в моей профессиональной деятельности.</div>
                             </div>
                             
                         </li>
@@ -252,7 +254,7 @@
                                         <h5 class="title_fz12 margin0">Фриланс</h5>
                                     </div>
                                 </div>
-                                <div class="experience__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+                                <div class="experience__body">Свой первый заказ на фрилансе я получил уже через 2 месяца после начала изучения, сейчас он кажется совсем простым, но это было потрясающим доказательством и монетизацией моих навыков. </div>
                             </div>
                             <div class="experience__item">
                                 <div class="experience__head">
@@ -267,11 +269,11 @@
                                             </svg>
                                     </div>
                                     <div class="experience__headwrapper">
-                                        <h4 class="title_fz14 title_fz14_workplace">UI/UX Designer</h4>
-                                        <h5 class="title_fz12 margin0">Squad Team | Москва (2018)</h5>
+                                        <h4 class="title_fz14 title_fz14_workplace">Верстальщик</h4>
+                                        <h5 class="title_fz12 margin0">Фриланс</h5>
                                     </div>
                                 </div>
-                                <div class="experience__body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmo. </div>
+                                <div class="experience__body">Выполнял заказы на верстку форм, лендингов и многостраничных сайтов. Верстку я изучил, знаю и использую с самого начала изучения Front-End, свой первый заказ я взял год назад.</div>
                             </div>
                         </li>
                     </ul>
@@ -290,28 +292,84 @@
             <div class="skills__wrapper">
                 <div class="skills__item">
                     <div class="skills__icon">
-                        <img src="icons/skills/HTML5.svg" alt="">
+                        <img src="icons/skills/HTML5.svg" alt="html5">
                     </div>
                     <div class="skills__name">HTML5</div>
                     <div class="skills__descr">Именно он создает каркас вашего сайта или приложения, а пятая версия позволит мне создавать более SEO-оптимизированную структуру вашего продукта</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__icon">
-                        <img src="icons/skills/CSS3.svg" alt="">
+                        <img src="icons/skills/CSS3.svg" alt="css3">
                     </div>
                     <div class="skills__name">CSS3</div>
                     <div class="skills__descr">Этот язык стилей позволяет мне создавать абсолютно любой внешний вид вашего сайта или приложения. Все ограничивается только вашей фантазией!</div>
                 </div>
                 <div class="skills__item">
                     <div class="skills__icon">
-                        <img src="icons/skills/JS.svg" alt="">
+                        <img src="icons/skills/JS.svg" alt="js">
                     </div>
                     <div class="skills__name">JavaScript</div>
                     <div class="skills__descr">Этот язык программирования позволяет оживить все что угодно: слайдеры, окна, подсказки, вкладки, получение данных от сервера и многое другое</div>
                 </div>
-                <!-- <div class="skills__item">
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/sass.svg" alt="sass">
+                    </div>
+                    <div class="skills__name">Sass/Scss</div>
+                    <div class="skills__descr">Препроцессоры CSS для более удобного написания стилей. Они позволяют писать продукт быстрее</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/bootstrap.svg" alt="bootstrap">
+                    </div>
+                    <div class="skills__name">Bootstrap 4</div>
+                    <div class="skills__descr">Набор инструментов для создания сайтов и веб-приложений. Так же, как и препроцессоры, упрощает жизнь разработчика и уменьшает время создания продукта</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/webpack.svg" alt="webpack">
+                    </div>
+                    <div class="skills__name">Webpack</div>
+                    <div class="skills__descr">Cборщик модулей. При большом количестве файлов он создает один объемный файл для запуска вашего приложения. Упрощает создание и поддержку продукта в будущем</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/git.svg" alt="git">
+                    </div>
+                    <div class="skills__name">Git</div>
+                    <div class="skills__descr">Хранилище всей истории создания. Необходим для командного создания продукта или позволяет, если нужно, быстро вернуть его старую версию</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/figma.svg" alt="figma">
+                    </div>
+                    <div class="skills__name">Figma</div>
+                    <div class="skills__descr">Онлайн-сервис для разработки интерфейсов. Позволяет работать с макетом продукта и продумывать дизайн вашего сайта до мелочей!</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/gulp.svg" alt="figma">
+                    </div>
+                    <div class="skills__name">Gulp</div>
+                    <div class="skills__descr">Таск-менеджер для автоматического выполнения часто используемых задач, позволяет избавить разработчика от рутинной работы и создать ваш продукт быстрее</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/babel.svg" alt="babel">
+                    </div>
+                    <div class="skills__name">Babel</div>
+                    <div class="skills__descr">Транскомпилятор, позволяет переводить код из более нового стандарта в старый, тем самым добавляя поддержку старых браузеров</div>
+                </div>
+                <div class="skills__item">
+                    <div class="skills__icon">
+                        <img src="icons/skills/mobilephone.svg" alt="mobile">
+                    </div>
+                    <div class="skills__name">Media queries</div>
+                    <div class="skills__descr">CSS правила, позволяют создавать адаптацию вашего сайта под мобильные устройства и планшеты</div>
+                </div>
+                <div class="skills__item">
                     <div class="skills__icon skills__icon_jquery">
-                        <img src="icons/skills/Jquery.svg" alt="">
+                        <img src="icons/skills/jquery.svg" alt="">
                     </div>
                     <div class="skills__name">Jquery</div>
                     <div class="skills__descr">Библиотека Jquery позволит ускорить разработку. Без необходимости интегрировать в проект мы её не будем, но навык работы с ней присутствует</div>
@@ -336,7 +394,7 @@
                     </div>
                     <div class="skills__name">Mongo.db</div>
                     <div class="skills__descr">Это нереляционная база данных, которая будет хранить данные вашего сайта или приложения</div>
-                </div> -->
+                </div>
             </div>
 
             <!-- <div class="skills__percent-wrapper">
@@ -393,23 +451,23 @@
             <div class="experience__line"></div>
 
             <div class="portfolio__wrapper">
-                <a href="https://ilyachurakov.github.io/Uber/" class="portfolio__item">
-                    <img src="img/uber.jpg" alt="">
+                <a href="https://marvel-test18.herokuapp.com/" class="portfolio__item">
+                    <img src="img/marvel.png" alt="">
                 </a>
                 <a href="https://ilyachurakov.github.io/Pulse/" class="portfolio__item">
-                    <img src="img/pulse.jpg" alt="">
+                    <img src="img/pulse.png" alt="">
+                </a>
+                <a href="https://ilyachurakov.github.io/Loan/" class="portfolio__item">
+                    <img src="img/loan.png" alt="">
+                </a>
+                <a href="https://ilyachurakov.github.io/Irvas/" class="portfolio__item" id="plans">
+                    <img src="img/Irvas2.png" alt="">
                 </a>
                 <a href="https://ilyachurakov.github.io/HungryPeople/" class="portfolio__item">
-                    <img src="img/HungryPeople.jpg" alt="Restaurant">
+                    <img src="img/hunrgypeople.png" alt="Restaurant">
                 </a>
-                <a href="#" class="portfolio__item" id="plans">
-                    <img src="img/plans.jpg" alt="">
-                </a>
-                <a href="#" class="portfolio__item">
-                    <img src="img/ipad.jpg" alt="">
-                </a>
-                <a href="#" class="portfolio__item" id="mac">
-                    <img src="img/mac.jpg" alt="">
+                <a href="https://ilyachurakov.github.io/Portraits/" class="portfolio__item" id="mac">
+                    <img src="img/portraits.png" alt="">
                 </a>
             </div>
         </div>
@@ -537,10 +595,10 @@
                             </svg>
                         </a>
                     </div>
-                    <div class="contacts__text">Или оставьте ваши данные и я сама вам напишу:</div>
+                    <div class="contacts__text">Или оставьте ваши данные и я сам вам напишу:</div>
                 </div>
                 
-                <form action="#" class="contacts__form" enctype="multipart/form-data" method="post" id="form" onsubmit="send(event, 'send.php')">
+                <form action="#" class="contacts__form" enctype="multipart/form-data" method="post" id="form" >
                     <div id="name" class="contacts__input">
                         <input required name="name" type="text">
                         <label for="name">Ваше имя</label>
@@ -569,7 +627,7 @@
 
     <a href="#up" class="pageup">
         <div class="pageup__up">
-            <svg width="30" height="30" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            <svg width="20" height="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
                 viewBox="0 0 492 492" style="enable-background:new 0 0 492 492;" xml:space="preserve">
                 <g>
                     <path fill="white" d="M442.627,185.388L265.083,7.844C260.019,2.78,253.263,0,245.915,0c-7.204,0-13.956,2.78-19.02,7.844L49.347,185.388

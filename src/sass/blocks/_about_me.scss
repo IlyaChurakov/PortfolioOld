@@ -1,5 +1,6 @@
 .about_me {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 735px;
     background: rgb(65, 65, 65);
     &__wrapper {
         display: grid;
@@ -23,10 +24,11 @@
         margin-top: 6px;
     }
     &__line {
-        width: 60px;
-        height: 3px;
+        width: 90px;
+        height: 6px;
         margin-top: 1px;
         background-color: $main-color;
+        border-radius: 6px;
     }
     &__text {
         font-style: normal;

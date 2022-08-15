@@ -1,5 +1,6 @@
 .experience {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 735px;
     background: rgb(65, 65, 65);
     &__title {
         text-align: center;
@@ -21,19 +22,17 @@
         }
     }
     &__line {
-        width: 60px;
-        height: 3px;
+        width: 90px;
+        height: 6px;
         margin: 0 auto;
         margin-top: 25px;
         background-color: $main-color;
+        border-radius: 6px;
     }
     &__wrapper {
         padding-top: 60px;
         display: grid;
         grid-template-columns: 350px 350px;
-        // column-gap: 150px;
-        // width: 836px;
-        // margin: 0 auto;
         justify-content: space-between;
     }
 

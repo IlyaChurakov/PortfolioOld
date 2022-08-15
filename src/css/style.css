@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Reboot v5.0.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -410,23 +411,31 @@ body {
 
 .container__about_me {
   padding-top: 120px;
+  padding-bottom: 60px;
 }
 
 .container__experience {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container__skills {
-  padding-bottom: 120px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.container__portfolio {
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container__price {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .container__contacts {
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 90px;
 }
 
@@ -538,6 +547,7 @@ body {
   padding: 12px 25px;
   border: none;
   color: #fff;
+  border-radius: 6px;
 }
 
 .btn:hover {
@@ -772,7 +782,8 @@ body {
 }
 
 .experience {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 735px;
   background: #414141;
 }
 
@@ -800,11 +811,12 @@ body {
 }
 
 .experience__line {
-  width: 60px;
-  height: 3px;
+  width: 90px;
+  height: 6px;
   margin: 0 auto;
   margin-top: 25px;
   background-color: #FFA501;
+  border-radius: 6px;
 }
 
 .experience__wrapper {
@@ -926,7 +938,8 @@ body {
 }
 
 .about_me {
-  min-height: 100vh;
+  height: 100vh;
+  max-height: 735px;
   background: #414141;
 }
 
@@ -963,10 +976,11 @@ body {
 }
 
 .about_me__line {
-  width: 60px;
-  height: 3px;
+  width: 90px;
+  height: 6px;
   margin-top: 1px;
   background-color: #FFA501;
+  border-radius: 6px;
 }
 
 .about_me__text {
@@ -1099,12 +1113,18 @@ body {
   -webkit-box-shadow: 5px 5px 30px;
           box-shadow: 5px 5px 30px;
   background: white;
+  border-radius: 6px;
 }
 
 .skills__icon {
   position: absolute;
   margin-top: 30px;
   margin-left: 30px;
+}
+
+.skills__icon img {
+  height: 65px;
+  width: 65px;
 }
 
 .skills__icon_jquery {
@@ -1255,6 +1275,7 @@ body {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 6px;
 }
 
 .portfolio__item:hover {
@@ -1368,10 +1389,11 @@ body {
 }
 
 .contacts__line {
-  width: 60px;
-  height: 3px;
+  width: 90px;
+  height: 6px;
   margin-top: 1px;
   background-color: #FFA501;
+  border-radius: 6px;
 }
 
 .contacts__text {
@@ -1491,6 +1513,7 @@ body {
   line-height: 18px;
   color: #ffffff;
   background: #414141;
+  border-radius: 6px;
 }
 
 .contacts__input label {
@@ -1524,6 +1547,7 @@ body {
   resize: none;
   background: #414141;
   border: 1px solid #fff;
+  border-radius: 6px;
 }
 
 .contacts__textarea label {
@@ -1578,6 +1602,25 @@ body {
   position: fixed;
   background: rgba(43, 43, 43, 0.8);
   z-index: 10;
+}
+
+.progressВarUnder {
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  background: #868686;
+  top: 0;
+}
+
+.progressВar {
+  position: absolute;
+  height: 5px;
+  width: 0%;
+  left: 0;
+  background: #ffa501;
+  top: 0;
+  border-radius: 2px;
 }
 
 @media (max-width: 1439px) {
